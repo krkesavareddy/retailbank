@@ -13,14 +13,14 @@ public class CustomerCreation implements Serializable {
 
 @Id
 @GeneratedValue(strategy=GenerationType.IDENTITY)
-public int customerId;
+public long customerId;
 public String customerName;
 public double balance;
 public String phoneNumber;
 public Date dob;
 public Date creationTimeStamp;
 public String accountType;
-public int getCustomerId() {
+public long getCustomerId() {
 	return customerId;
 }
 public void setCustomerId(int customerId) {
